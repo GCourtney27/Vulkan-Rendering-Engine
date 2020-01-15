@@ -97,7 +97,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include;$(ProjectDir)Includes\stb</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -114,7 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include;$(ProjectDir)Includes\stb</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -137,7 +137,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include;$(ProjectDir)Includes\stb</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -158,7 +158,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Includes\glfw-3.3.bin.WIN64\include;$(ProjectDir)Includes\glm;C:\VulkanSDK\1.1.126.0\Include;$(ProjectDir)Includes\stb</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
