@@ -1,3 +1,4 @@
+#include "pch.h"
 
 #define GLFW_INCLUDE_VULKAN
 #define GLM_FORCE_RADIANS
@@ -15,26 +16,12 @@
 #define TINYOBJLOADER_IMPLEMENTATION
 #include <tiny_obj_loader.h>
 
-#include <chrono>
-#include <iostream>
-#include <fstream>
-#include <stdexcept>
-#include <algorithm>
-#include <vector>
-#include <cstring>
-#include <cstdlib>
-#include <cstdint>
-#include <optional>
-#include <set>
-#include <array>
-#include <unordered_map>
 
+const int WIDTH = 1600;
+const int HEIGHT = 900;
 
-const int WIDTH = 800;
-const int HEIGHT = 600;
-
-const std::string MODEL_PATH = "models/chalet.obj";
-const std::string TEXTURE_PATH = "textures/chalet.jpg";
+const std::string MODEL_PATH = "Assets/models/sphere.obj";
+const std::string TEXTURE_PATH = "Assets/textures/chalet.jpg";
 
 const int MAX_FRAMES_IN_FLIGHT = 2;
 
@@ -150,7 +137,7 @@ struct SwapChainSupportDetails
 
 
 struct UniformBufferObject {
-	glm::vec2 foo;
+	glm::vec2 padding;
 	glm::mat4 model;
 	glm::mat4 view;
 	glm::mat4 proj;
@@ -204,10 +191,10 @@ private:
 	bool framebufferResized = false;
 
 	std::vector<Vertex> vertices;
-	std::vector<uint32_t> indices;
 	VkBuffer vertexBuffer;
 	VkDeviceMemory vertexBufferMemory;
 
+	std::vector<uint32_t> indices;
 	VkBuffer indexBuffer;
 	VkDeviceMemory indexBufferMemory;
 
@@ -1082,7 +1069,7 @@ private:
 
 		auto currentTime = std::chrono::high_resolution_clock::now();
 		float time = std::chrono::duration<float, std::chrono::seconds::period>(currentTime - startTime).count();
-
+		
 		UniformBufferObject ubo = {};
 		ubo.model = glm::rotate(glm::mat4(1.0f), time * glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 		ubo.view = glm::lookAt(glm::vec3(2.0f, 1.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
